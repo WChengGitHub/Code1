@@ -1,0 +1,9 @@
+a{
+	text-decoration:underline;
+}
+#slideshow{
+	width:100px;
+	height:100px;
+	overflow:hidden;
+	position:relative;
+}

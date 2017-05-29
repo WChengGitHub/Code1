@@ -1,0 +1,82 @@
+body
+{
+	font-family:Geneva,Tahoma,sans-serif;
+	background-color:#ccc;
+	background-image:url(../img/bg-pattern.jpg);
+}
+h1,
+h2
+{
+	font-family:"Gill Sans","Gill Sans MT",Calibri,sans-serif;
+	font-weight:normal;
+}
+h1
+{
+	font-size:2.1875em;
+	text-transform:uppercase;
+	text-align:center;
+}
+h2
+{
+	font-size:1.75em;
+	color:#7d717c;
+	background-color:#eaebef;
+	letter-spacing:1px;
+	font-variant:small-caps;
+}
+em,
+a:link,
+.intro .subhead
+{
+	font-weight:bold;
+}
+.architect
+{
+	background-color:#fff;
+	padding:1.5em 1.75em;
+}
+.intro
+{
+	background-color:#686a63;
+	color:#fff;
+	line-height:1.45;
+	padding:1px 1.875em .7em;
+}
+.intro .subhead
+{
+	text-align:center;
+}
+.intro p
+{
+	font-size:1.0625em;
+	text-align:justify;
+}
+.project p
+{
+	font-size:.9375em;
+	line-height:1.65;
+	text-indent:2em;
+	text-align:justify;
+}
+a:link
+{
+	color:#e10000;
+	text-decoration:none;
+}
+a:visited
+{
+	color:#b44f4f;
+}
+a:hover
+{
+	color:#f00;
+	text-decoration:underline;
+}
+.intro a
+{
+	color:#fdb0gd;
+}
+.intro a:hover
+{
+	color:#fec4b6;
+}
