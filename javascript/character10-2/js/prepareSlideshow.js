@@ -4,17 +4,29 @@ function prepareSlideshow(){
 		return false;
 	if(!document.getElementsByTagName)
 		return false;
-	if(!document.getElementById("preview"))
+	/*if(!document.getElementById("preview"))
 		return false;
+	*/
 	if(!document.getElementById("linkedList"))
 		return false;
 	
-	var preview=document.getElementById("preview");
+	var div=document.createElement("div");
+	div.setAttribute("id","slideshow");
+	
+	var img=document.createElement("img");
+	img.setAttribute("id","preview");
+	img.setAttribute("src","images/sky.jpg");
+	img.setAttribute("alt","building blocks of web design");
+	
+	div.appendChild(img);
+	/*var preview=document.getElementById("preview");
 	preview.style.position="absolute";
-	preview.style.left="0px";
-	preview.style.top="0px";
+	/*preview.style.left="0px";
+	preview.style.top="0px";*/
 	
 	var linkedList=document.getElementById("linkedList");
+	insertAfter(div,linkedList);
+	
 	var links=linkedList.getElementsByTagName("a");
 	
 	links[0].onmouseover=function(){

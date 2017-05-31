@@ -7,3 +7,6 @@ a{
 	overflow:hidden;
 	position:relative;
 }
+#preview{
+	position:absolute;
+}
