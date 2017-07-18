@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+  <head>
+    <title>example1</title>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <script type="text/javascript">
+	  /*var person=new Object();*/
+	  /*var person={};
+	  person.name="Nicholas";
+	  person.age=29;
+	  var person={
+		"name":"Nicholas",
+		"age":29
+	  };
+	  //alert(person.toString());
+	  function displayInfo(args){
+		var output="";
+		if(typeof args.name=="string"){
+			output+="name:"+args.name+"\n";
+		}
+		if(typeof args.age=="number"){
+			output+="age:"+args.age+"\n";
+		}
+		alert(output);
+	  }
+	  displayInfo({
+		name:"Nicholas",
+		age:29
+	  });
+	  displayInfo({
+		name:"Greg"
+	  });
+	  alert(person["name"]);*/
+	  //var colors=["red","blue","green"];
+	  //alert(colors.length);
+	  //alert(colors instanceof Array);
+	  //alert(Array.isArray(colors));
+	  /*var person1={
+		toLocateString:function(){
+			return "Nicholas";
+		},
+		toString:function(){
+			return "Nich";
+		}
+	  };
+	  var person2={
+		toLocateString:function(){
+			return "Gri";
+		},
+		toString:function(){
+			return "Greg";
+		}
+	  }
+	  var person=[person1,person2];
+	  //alert(person.toLocateString());
+	  //alert(person.toLocateString());
+	  alert(person.toString());*/
+	  /*var colors=new Array();
+	  var count=colors.push("red","green");
+	  alert(count);
+	  //var item=colors.pop();
+	  var item=colors.shift();
+	  alert(item);*/
+	  /*var colors=new Array();
+	  var count=colors.unshift("red","green");
+	  alert(count);
+	  alert(colors.pop());*/
+	  /*var values=[1,2,3,4,5];
+	  values.reverse();
+	  alert(values);*/
+	  /*function compare(value1,value2){
+		return value2-value1;
+	  }
+	  var value=[0,1,5,10,15];
+	  value.sort(compare);
+	  alert(value);*/
+	  /*var colors=["red","green","blue"];
+	  var colors2=colors.concat("yellow",["black","brown"]);
+	  alert(colors);
+	  alert(colors2);*/
+	  /*var colors=["red","green","blue","yellow","purple"];
+	  var colors2=colors.slice(1);
+	  var colors3=colors.slice(1,4);
+	  alert(colors2);
+	  alert(colors3);*/
+	  /*var colors=["red","green","blue"];
+	  var removed=colors.splice(0,1);
+	  alert(colors);
+	  alert(removed);
+	  
+	  removed=colors.splice(1,0,"yellow","orange");
+	  alert(colors);
+	  alert(removed);
+	  
+	  removed=colors.splice(1,1,"red","purple");
+	  alert(colors);
+	  alert(removed);*/
+	  /*var numbers=[1,2,3,4,5,4,3,2,1];
+	  alert(numbers.indexOf(4));
+	  alert(numbers.lastIndexOf(4));
+	  
+	  alert(numbers.indexOf(4,4));*/
+	  var numbers=[1,2,3,4,5,4,3,2,1];
+	  /*var everyResult=numbers.every(function(item,index,array){
+			return (item>2);
+	  });
+	  alert(everyResult);
+	  
+	  var someResult=numbers.some(function(item,index,array){
+			return (item>2);
+	  });
+	  alert(someResult);*/
+	  
+	  /*var filterResult=numbers.filter(function(item,index,array){
+			return (item>2);
+	  });
+	  alert(filterResult);*/
+	  /*var mapResult=numbers.map(function(item,index,array){
+			return item*2;
+	  });
+	  alert(mapResult);
+	  var values=[1,2,3,4,5];
+	  var sum=values.reduce(function(pre,cur,index,array){
+		return pre+cur;
+	  });
+	  alert(sum);
+	  var now=new Date(2000,0);
+	  alert(now);
+	  alert(Date.now());
+	  var date1=new Date(2007,0,1);
+	  var date2=new Date(2007,1,1);
+	  alert(date1<date2);
+	  alert((new Date()).toDateString());
+	  alert((new Date()).getFullYear());
+	  var re=null;
+	  for(var i=0;i<10;i++){
+		re=/cat/g;
+		re.test("catastrophe");
+	  }
+	  alert(i);
+	  var pattern1=/\[bc\]at/i;
+	  var pattern1=new RegExp("\\[bc\\]at","i");
+	  alert(pattern1.global);
+	  alert(pattern1.ignoreCase);
+	  alert(pattern1.source);
+	  var text="mom and dad and baby";
+	  var pattern=/mom( and dad( and baby)?)?/gi;
+	  var matches=pattern.exec(text);
+	  alert(matches.index);
+	  alert(matches.input);
+	  alert(matches[0]);
+	  alert(matches[1]);
+	  alert(matches[2]);
+	  var text="cat,bat,sat,fat";
+	  var pattern1=/.at/g;
+	  
+	  var matches=pattern1.exec(text);
+	  alert(matches.index);
+	  alert(matches[0]);
+	  alert(pattern1.lastIndex);
+	  
+	  var matches=pattern1.exec(text);
+	  alert(matches.index);
+	  alert(matches[0]);
+	  alert(pattern1.lastIndex);
+	  var text="000-00-0000";
+	  var pattern=/\d{3}-\d{2}-\d{4}/;
+	  alert(pattern.test(text));
+	  var pattern=new RegExp("\\[bc\\]at","gi");
+	  alert(pattern.toString());
+	  alert(pattern.toLocateString());*/
+	  var text="this has been a short summer";
+	  var pattern=/(.)hort/g;
+	  if(pattern.test(text)){
+		alert(RegExp.input);
+		alert(RegExp.leftContext);
+		alert(RegExp.rightContext);
+		alert(RegExp.lastMatch);
+		alert(RegExp.lastParen);
+		alert(RegExp.multiline);
+	  }
+	</script>
+  </body>
+</html>

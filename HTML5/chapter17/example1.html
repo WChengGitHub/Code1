@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Example</title>
+	<style type="text/css">
+	  /*{
+		border:thin black solid;
+		padding:4px;
+	  }
+	  a {
+		border:thin black solid;
+		padding:4px;
+	  }
+	  .class2{
+		border:thin black solid;
+		padding:4px;
+	  }
+	  span.class2{
+		border:thin black solid;
+		padding:4px;
+	  }
+	  #w3canchor{
+		border:thin black solid;
+		padding:4px;
+	  }
+	  a,[lang|="en"]{
+		border:thin black solid;
+		padding:4px;
+	  }
+	  p span{
+		border:thin black solid;
+		padding:4px;
+	  }
+	  p>span{
+		border:thin black solid;
+		padding:4px;
+	  }
+	  p+a{
+		border:thin black solid;
+		padding:4px;
+	  }
+	  p~a{
+		border:thin black solid;
+		padding:4px;
+	  }
+	  ::first-line{
+		background-color:grey;
+		color:white;
+	  }
+	  ::first-letter{
+		background-color:grey;
+		color:white;
+		border:thin black solid;
+		padding:4px;
+	  }
+	  a:before{
+		content:"Click here to";
+	  }
+	  a:after{
+		content:"!";
+	  }
+	  body{
+		counter-reset:paracount;
+	  }
+	  p:before{
+		content:counter(paracount) ".";
+		counter-increment:paracount;
+	  }
+	  :root{
+		border:thin black solid;
+		padding:4px;
+	  }
+	  p span:first-child{
+		border:thin black solid;
+		padding:4px;
+	  }
+	  :last-child{
+		border:thin black solid;
+		padding:4px;
+	  }
+	  p :only-child{
+		border:thin black solid;
+		padding:4px;
+	  }
+	  :only-of-type{
+		border:thin black solid;
+		padding:4px;
+	  }
+	  :nth-child(3){
+		border:thin black solid;
+		padding:4px;
+	  }
+	  :disabled{
+		border:thin black solid;
+		padding:4px;
+	  }
+	  :checked+span{
+	    background-color:red;
+		color:white;
+		padding:5px;
+		border:medium solid black;
+	  }
+	  :default{
+		outline:medium solid red;
+	  }
+	  :valid{
+	    outline:medium solid green;
+	  }
+	 :invalid{
+		outline:medium solid red;
+	  }
+	  :in-range{
+	    outline:medium solid green;
+	  }
+	  :out-of-range{
+	    outline:medium solid red;
+	  }*/
+	  :required{
+	  }
+	</style>
+  </head>
+  <body>
+    <!--<a lang=en-us" class=" class1 class2" href="http://apress.com">Visit the Apress website</a>
+	<p lang="en">I like<span class="class2"> apples</span> and oranges</p>
+	<a id="w3canchor" href="http:/w3c.org">Visit the W3C</a>
+	<a href="http://google.com">Visit Goole</a>-->
+	<!--<textarea>This is an enabled textareea</textarea>
+	<textarea disabled>This is a disabled textarea</textarea>-->
+	<!--<form method="post" action="http://titan:8080/form">
+	  <p>
+	    <label for="apples">Do you like apples:</label>
+		<input id="apples" type="checkbox" name="apples"/>
+		<span>This will go red when checked</span>
+	  </p>
+	</form>-->
+	<form method="post" action="http://titan:8080/form">
+	  <!--<p>
+	    <label for="name">Name:<input id="name" name="name"/></label>
+	  </p>
+	  <button type="submit">Submit Vote</button>
+	  <button type="reset">Reset</button>-->
+	  <!--<p>
+	    <label for="name">Name:<input id="name" type="text" required/></label>
+	  </p>
+	  <p>
+	    <label for="city">City:<input id="city" type="text" required/></label>
+	  </p>
+	  <button type="submit">Submit</button>-->
+	  <p>
+	    <label for="price">
+		$per unit in your area:
+		<input type="number" min="0" max="100"
+			value="1" id="price" name="price"/>
+	  </p>
+	  <p>
+	    <label for="price1">
+		$per unit in your area:
+		<input type="number" min="0" max="100"
+			value="1" id="price1" name="price1"/>
+	  </p>
+	</form>
+  </body>
+</html>
